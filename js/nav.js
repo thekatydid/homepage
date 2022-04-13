@@ -11,7 +11,7 @@ function navsMove(i){
     navs[i].hover(function(){
         $(`#contents>.container>.item:nth-child(${i+1})>ul`).show(300);
     },function(){
-        $(this).css("color","gray");
+
         $(`#contents>.container>.item:nth-child(${i+1})>ul`).hide(300);
 
     })
@@ -22,5 +22,6 @@ if($(window).width()> 481){
     {
         navsMove(i);
     }
+    
 };
 

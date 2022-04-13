@@ -1,1 +1,25 @@
-.dw{};
+#contents{
+    border:none;
+}
+#container{
+    background-color: #747474;
+}
+@media (min-width: 481px) {
+    #contents>.container>.item>ul {
+        font-size: 0.8rem;
+        text-align: center;
+        list-style: none;
+        color:gray;
+        padding:0px;
+    }
+    #contents>.container>.item {
+        font-size: 1rem;
+        flex: 1;
+        text-align: center;
+        border:none;
+    }
+   
+    #contents>.container>.item>a:hover{
+        border-bottom: 1px solid #242424;
+    }
+}
