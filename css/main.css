@@ -1,0 +1,47 @@
+body {
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+}
+a{
+	text-decoration: none;
+	color :black;
+}
+li{
+	list-style: none;
+}
+#mainContainer {
+	position: relative;
+	width: 1024px;
+	padding: 0px;
+	background-color: whitesmoke;
+}
+
+.item {
+	border : 1px solid black;
+	/* border-bottom: 1px solid gray; */
+	background-color: whitesmoke;
+
+}
+
+#mainPart {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mainPartA {
+	flex-basis: 768px;
+	height: 500px;
+	flex-shrink: 1;
+}
+
+#mainPartB {
+	width: 250px;
+}
+
+/* 웹페이지에서... */
+@media (min-width: 481px) {
+	#mainContainer {
+		padding: 20px;
+	}
+}

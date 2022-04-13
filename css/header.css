@@ -1,0 +1,69 @@
+#logo{
+	width:64px;
+	height:64px;
+}
+#logoString{
+    height:64px;
+    width:auto;
+}
+#contents>.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#contents>.container>.item{
+padding: 5px;
+font-size: 0.8rem;
+
+}
+#headerFlex{
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+#headerFlex>#ver
+{
+    visibility: hidden;
+}
+#menuIcon{
+    position:absolute;
+    width:32px;
+    height:32px;
+    right:10px;
+   
+}
+@media ( min-width: 481px ){
+    #headerFlex>#ver
+{
+    visibility: visible;
+    position:absolute;
+    right:5px;
+    top:5px;
+    color:rgb(124,124,124);
+}
+    #logo{
+        width:80px;
+        height:80px;
+    }
+    #logoString{
+        height:80px;
+        width:auto;
+    }
+    #headerFlex{
+        height:100px;
+    }
+	#contents>.container{
+        visibility: visible;
+        flex-direction: row;
+        
+        height:auto;
+    }
+    #contents>.container>.item{
+        font-size : 1rem;
+        flex :1;
+        text-align: center;
+    }
+    #menuIcon{
+        display: none;
+    }
+}
