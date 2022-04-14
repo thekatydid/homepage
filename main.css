@@ -1,0 +1,65 @@
+body {
+	font-family: 'Gowun Batang', serif;
+	display: flex;
+	justify-content: center;
+	background-color: whitesmoke;
+}
+a{
+	text-decoration: none;
+	color :black;
+}
+li{
+	list-style: none;
+}
+
+.item {
+	border : 1px solid black;
+	/* border-bottom: 1px solid gray; */
+	background-color: whitesmoke;
+}
+#mainContainer {
+	position: relative;
+	width: 1024px;
+	padding: 0px;
+	background-color: whitesmoke;
+}
+
+#mainPart {
+	margin-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mainPartA {
+	flex-basis: 768px;
+	height: auto;
+	flex-shrink: 1;
+	margin-left: 20px;
+	margin-right: 20px;
+	border : none;
+}
+
+#mainPartB {
+	flex-basis: 150px;
+	flex-grow:1;
+}
+.subTitle {
+	margin-top: 20px;
+	font-weight : 600;
+	font-size : 1.2rem;
+}
+.mainDecoBar{
+	margin-top: 3px;
+	background-color: #747474;
+	height: 1px;
+	margin-bottom: 10px;
+}
+/* 웹페이지에서... */
+@media (min-width: 481px) {
+	#mainContainer {
+		padding: 20px;
+	}
+	#mainPart>.item{
+		padding :20px;
+	}
+}
