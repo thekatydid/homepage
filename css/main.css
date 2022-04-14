@@ -32,15 +32,28 @@ li{
 
 #mainPartA {
 	flex-basis: 768px;
-	height: 500px;
+	height: auto;
 	flex-shrink: 1;
+	margin-left: 20px;
+	margin-right: 20px;
+	border : none;
 }
 
 #mainPartB {
 	flex-basis: 150px;
 	flex-grow:1;
 }
-
+.subTitle {
+	margin-top: 20px;
+	font-weight : 600;
+	font-size : 1.2rem;
+}
+.mainDecoBar{
+	margin-top: 3px;
+	background-color: #747474;
+	height: 1px;
+	margin-bottom: 10px;
+}
 /* 웹페이지에서... */
 @media (min-width: 481px) {
 	#mainContainer {
