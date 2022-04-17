@@ -30,19 +30,24 @@
 #mainPartB {
     display: flex;
     align-items: center;
-
+    border: none;
+    border-top: 1px solid #747474;
+    padding-left: 10px;
 }
 #mainPartB #nextbtndiv{
     flex-grow: 1;
 }
+
+/* 다음으로 넘기는 버튼 */
 #mainPartB img{
-    /* position: absolute; */
+    
     float : right;
     padding: 0px;
     margin-right: 10px;
-    height: 40px;
-    width: 40px;
+    height: 24px;
+    width: 24px;
 }
+
 @media (min-width: 481px){
     .sideContainer>.item>ul{
         margin: 0px;
@@ -51,6 +56,8 @@
     }
     #mainPartB {
         display:block;
+        border : none;
+        border-left: 1px solid #747474;
     }
     #nextbtndiv{
         display: none;

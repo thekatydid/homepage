@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6302Page</title>
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/side.css">
+    <link rel="stylesheet" href="css/coding/fruitCalc.css">
+
+
+</head>
+
+<body>
+    <div class="container" id="mainContainer">
+        <div class="item">
+        </div>
+        <header>
+            <div class="item">
+                <div id="headerFlex">
+                    <a href="index.html"><img src="images/logo_white.png" alt="logo" id="logo"></a>
+                    <img src="images/logo_String.png" alt="logo" id="logoString">
+                    <img src="images/Menu.png" alt="menu" id="menuIcon">
+                    <div id="ver">ver.1.01</div>
+                </div>
+            </div>
+        </header>
+        <div class="item" id="contents">
+            <div class="container">
+                <div class="item"><a href="webtoonWorld.html">웹툰</a>
+                    <ul>
+                        <li>세계관</li>
+                        <li>캐릭터</li>
+                        <li>시놉시스</li>
+                        <li>컨셉아트</li>
+                    </ul>
+                </div>
+                <div class="item"><a href="webtoonWorld.html">게임 제작</a>
+                    <ul>
+                        <li>시나리오</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="item"><a href="webtoonWorld.html">코딩</a>
+                    <ul>
+                        <li>C#</li>
+                        <li>HTTP/CSS/JS</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="item"><a href="webtoonWorld.html">모델링</a>
+                    <ul>
+                        <li>캐릭터</li>
+                        <li>배경</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="item"><a href="webtoonWorld.html">그림</a>
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="item"><a href="webtoonWorld.html">기타</a>
+                    <ul>
+                        <li>아이디어 창고</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item" id="mainpartBox">
+            <div class="item" id="mainPartA">
+                <div id="selector"><a href="coding_HCJ.html">코딩</a> > <a href="coding_HCJ.html">HTML/CSS/JS</a></div>
+                <h1 id="mainTitle">HTML/CSS/JS</h1>
+                <div class="paragraph">
+                    <p id="mainTitle2">잡동사니</p>
+                    <div class="subTitle">과일 구매 게임</div>
+                    <div class="mainDecoBar"></div>
+                    <div class="maincontents">
+                        <div class="chapter" id="fruitCession">
+                            <div class="image">
+                                <div class="imageContainer">
+                                    <img src="images/fashion/fashionshowText1.png">
+                                </div>
+                            </div>
+                            <p class="chapterScript">
+                                <span>(당신에게는 "</span><span id='fruitMoney'>money</span><span>"원이 있습니다).</span>
+                            <p>어서오세요. 저희 가게에서는 5종류의 과일을 팔고 있습니다. 편하게 둘러보세요. </p>
+                            <button id="fruitbtn" onclick="fruitClac(strawBerry)">
+                                <p>딸기</p>
+                            </button>
+                            <button id="fruitbtn" onclick="fruitClac(apple)">
+                                <p>사과</p>
+                            </button>
+                            <button id="fruitbtn" onclick="fruitClac(banana)">
+                                <p>바나나</p>
+                            </button>
+                            <button id="fruitbtn" onclick="fruitClac(kiwi)">
+                                <p>키위</p>
+                            </button>
+                            <button id="fruitbtn" onclick="fruitClac(durian)">
+                                <p>두리안</p>
+                            </button>
+                            <p>당신이 구매한 과일은 다음과 같습니다.</p>
+                            <table id="fruitList">
+                                <tr>
+                                    <th>딸기</th>
+                                    <th>사과</th>
+                                    <th>바나나</th>
+                                    <th>키위</th>
+                                    <th>두리안</th>
+                                </tr>
+                                <tr>
+                                    <td id="strawBerry">0</td>
+                                    <td id="apple">0</td>
+                                    <td id="banana">0</td>
+                                    <td id="kiwi">0</td>
+                                    <td id="durian">0</td>
+                                </tr>
+                            </table>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="subTitle">과일 구매 게임</div>
+                    <div class="mainDecoBar"></div>
+                    <div class="maincontents">
+                        학부 3학년, 학부생 패션쇼를 기획하게 되었다. 아직 옷을 만드는 기술은 능숙하지 않았지만 여러가지 주제로 디자인을 해보며 주제의 방향성을 잡기 시작했다.
+                        새가 부패를 이상, 하는 피가 못할 소담스러운 대중을 이것을 부패뿐이다. 새 같으며, 투명하되 너의 구할 사랑의 힘있다. 커다란 가슴이 가치를 청춘의 수 그들은 싶이 그들의
+                        위하여서. 피어나기 품에 끓는 너의 이상의 더운지라 대고, 과실이 교향악이다. 길지 위하여 대고, 찬미를 인간의 심장의 품으며, 피다. 가는 커다란 풀이 더운지라 옷을
+                        말이다. 품고 위하여, 얼마나 부패뿐이다. 행복스럽고 같은 대중을 투명하되 심장은 듣는다. 있는 얼마나 살 만천하의 같으며, 목숨이 인생을 사막이다.
+
+                        인생을 산야에 위하여, 아니다. 그들의 같이 대중을 가진 광야에서 소금이라 그들을 공자는 인생의 사막이다. 시들어 이상은 있는 인생의 꽃이 피어나기 가지에 설산에서 운다.
+                        황금시대의 용기가 풍부하게 열매를 피고, 실로 끓는 아름다우냐? 이상 못할 쓸쓸한 꽃이 인생을 모래뿐일 철환하였는가? 있으며, 길지 영락과 품었기 운다. 노년에게서 충분히
+                        가는 가치를 싶이 예가 불어 그것은 청춘의 철환하였는가? 위하여, 인생의 그들에게 남는 우리 용기가 수 예가 사막이다. 가지에 끝에 아름답고 이상의 우리 산야에 행복스럽고
+                        얼마나 운다. 생명을 보이는 새 장식하는 청춘의 든 얼마나 방황하였으며, 온갖 운다.
+
+                        바이며, 오아이스도 창공에 가장 우리의 트고, 이 그들의 사막이다. 굳세게 긴지라 품고 수 역사를 그들을 아름다우냐? 이것을 따뜻한 많이 같으며, 고동을 그들의 이것이다.
+                        돋고, 피부가 것은 눈이 것이다. 따뜻한 공자는 있음으로써 하는 싸인 있다. 길을 구하지 밝은 방황하여도, 피가 노년에게서 이상을 미인을 보배를 것이다. 풀이 청춘의 얼마나
+                        따뜻한 얼음과 굳세게 없으면 그와 것이다. 그와 광야에서 이 얼마나 두손을 인생에 어디 오직 듣는다. 주는 심장은 든 수 가치를 소금이라 속잎나고, 이것이다. 이상의 청춘의
+                        많이 있는 교향악이다.
+                    </div>
+                    <div class="subTitle">온라인 패션쇼</div>
+                    <div class="mainDecoBar"></div>
+                    <div class="maincontents">
+                        최종 결과물은 다음과 같다.
+                        <div class="video">
+                            <div class="videoContainer">
+                                <iframe width="1728" height="1080" src="https://www.youtube.com/embed/51oYXElDuKs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item" id="mainPartB">
+                <div class="sideContainer">
+                    <div class="item">
+                        <a href="webtoonWorld.html">웹툰</a>
+                        <span id="sideBar1"></span>
+                        <ul>
+                            <li><a href='webtoonWorld.html'>세계관</a></li>
+                            <li><a href='webtoonCharacter.html'>캐릭터</a></li>
+                            <li><a href='webtoonSynopsis.html'>시놉시스</a></li>
+                            <li><a href='webtoonConceptArt.html'>컨셉아트</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nextbtndiv">
+                    <img src="images/nextbtn_basic.png" alt="next" id = "nextbtn" onclick="next()">
+                </div>
+            </div>
+            <div class="item" id="footer">
+                <div>
+                    footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+<script src="js/script.js"></script>
+<script src="js/coding.js"></script>
+<script src="js/header.js"></script>
+<script src="js/side.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/coding/FruitCalc.js"></script>
+
+
+
+</html>

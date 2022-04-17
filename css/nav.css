@@ -1,16 +1,17 @@
-#contents{
-    border:none;
-}
+
 #container{
     background-color: #747474;
 }
 @media (min-width: 481px) {
     #contents>.container>.item>ul {
-        font-size: 0.8rem;
+        font-size : 0.8rem;
         text-align: center;
         list-style: none;
-        color:gray;
         padding:0px;
+    }
+    #contents>.container>.item>ul a{
+        color : #747474;
+        padding : 0px 10px 0px 10px;
     }
     #contents>.container>.item {
         font-size: 1rem;
