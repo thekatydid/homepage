@@ -1,0 +1,24 @@
+
+.webtoonDiv img{
+    width : 100vw;
+}
+
+#WtBackBtn {
+    position: fixed;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: green;
+}
+
+
+@media (min-width: 481px) {
+    
+    .webtoonDiv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .webtoonDiv img{
+        width : 600px;
+    }
+}

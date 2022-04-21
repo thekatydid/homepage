@@ -1,10 +1,12 @@
 const Webtoon = {
     name: "<a href='webtoonWorld.html'>웹툰</a>",
-    list: ["세계관", "캐릭터", "시놉시스", "컨셉아트"],
+    list: ["세계관", "캐릭터", "시놉시스", "컨셉아트", "웹툰보기"],
     linkList: ["<a href='webtoonWorld.html'>세계관</a>",
         "<a href='webtoonCharacter.html'>캐릭터</a>",
         "<a href='webtoonSynopsis.html'>시놉시스</a>",
-        "<a href='webtoonConceptArt.html'>컨셉아트</a>",]
+        "<a href='webtoonConceptArt.html'>컨셉아트</a>",
+        "<a href='webtoon1.html'>웹툰보기</a>"
+    ]
 }
 const GameMaking = {
     name: "<a href='webtoonWorld.html'>게임 제작</a>",
@@ -42,9 +44,9 @@ const Art = {
 
 
 const Fashion = {
-    name: "<a href='art_AnalogDrawing.html'>패션</a>",
+    name: "<a href='fashion_Fashionshow.html'>패션</a>",
     list: ["세계관", "캐릭터", "시놉시스", "컨셉아트"],
-    linkList: ["<a href='art_AnalogDrawing.html'>패션일러스트</a>",
+    linkList: ["<a href='fashion_Fashionshow copy.html'>패션일러스트</a>",
         "<a href='webtoonCharacter.html'>패션머천다이징</a>",
         "<a href='webtoonSynopsis.html'>패션과컬러</a>",
         "<a href='fashion_FashionShow.html'>패션쇼</a>",]
@@ -58,12 +60,11 @@ const Etc = {
         "<a href='art_Fashionshow.html'>패션쇼</a>",]
 }
 
-let Webtoons = [
-    Webtoon.name,
-    Webtoon.linkList[0],
-    Webtoon.linkList[1],
-    Webtoon.linkList[2],
-    Webtoon.linkList[3],]
+let Webtoons = [];
+    Webtoons.push(Webtoon.name);
+    for(i=0; i<Webtoon.linkList.length; i++){Webtoons.push(Webtoon.linkList[i])};
+    
+
 
 let GameMakings = [
     GameMaking.name,
